@@ -17,6 +17,7 @@ var express              = require("express"),
     mongoose.connect(MONGODB, {useNewUrlParser: true, useUnifiedTopology: true})
     
 //seedDB();
+const port=process.env.PORT || 3000;
 app.use(require("express-session")({
     secret: "Hi this is yelp camp app",
     resave: false,
@@ -39,6 +40,6 @@ app.use(campgroundsRouters);
 app.use(commentRouter);
 app.use(indexRouter);
 
-app.listen(3000, function(){
+app.listen(port, function(){
     console.log("Server started!!");
 });
