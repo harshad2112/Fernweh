@@ -40,6 +40,6 @@ app.use(campgroundsRouters);
 app.use(commentRouter);
 app.use(indexRouter);
 
-app.listen(port, function(){
+app.listen(port,() => {
     console.log("Server started!!");
 });
