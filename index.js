@@ -11,7 +11,7 @@ var express              = require("express"),
     user                 = require("./models/users"),
     seedDB               = require("./seeds"),
     campgroundsRouters   = require("./routers/campgrounds"),
-    commentRouter        = require("./routers/comments"),
+    commentRouter        = require("./routers/comments"), 
     indexRouter          = require("./routers/index"),
     {MONGODB}              = require("./config.js");
     mongoose.connect(MONGODB, {useNewUrlParser: true, useUnifiedTopology: true})
