@@ -1,10 +1,11 @@
 <%- include ("../partials/header") %>
     
-<h4>Enter new campground Name and Image source</h4>
-    <form action="/campgrounds" method="POST">
-        <input type="text" name="name" placeholder="name">
-        <input type="url" placeholder="image url" name="imgURL">
-        <button>Submit!</button>
+<h4>Write your blog here</h4>
+    <form action="/campgrounds" method="POST" class="Label">
+        <input type="text" name="name" placeholder="name" class="postText" required>
+        <input type="url" placeholder="image url" name="imgURL" class="postText" required>
+        <textarea type="text" placeholder="Description" name="desc" class="desc" required></textarea>
+        <button class="submitButton">Submit</button>
     </form>
 
 <%- include ("../partials/footer") %>

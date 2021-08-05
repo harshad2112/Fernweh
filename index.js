@@ -17,7 +17,7 @@ var express              = require("express"),
     mongoose.connect(MONGODB, {useNewUrlParser: true, useUnifiedTopology: true})
     
 //seedDB();
-const port=process.env.PORT || 3001;
+const port=process.env.PORT || 3000;
 app.use(require("express-session")({
     secret: "Hi this is yelp camp app",
     resave: false,

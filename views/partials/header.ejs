@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="/app.css">
         <link rel="stylesheet" type="text/css" href="/login.css">
         <link rel="stylesheet" type="text/css" href="/home.css">
+        <link rel="stylesheet" type="text/css" href="/blogs.css">
     </head>
     <body>
         <div class="cH">
@@ -20,9 +21,9 @@
                     <a class="LeftLogin" href="/login">Login</a>
                     <a class="Left" href="/register">Register</a>
                     <% }else{ %>
-                    <a class="LeftLogin" href="/campgrounds/new">write a Blog</a>
-                    <a class="LeftLogin" href="#">Welcome, <%=currentUser.username %></a>
-                    <a class="Left" href="/logout">LOGOUT</a>
+                    <a class="LeftLogin" href="/campgrounds/new">Write a blog</a>
+                    <a class="LeftLogin" href="/campgrounds">Explore</a>
+                    <a class="Left" href="/logout">Logout</a>
                 <% } %>
             </div>
         </div>  

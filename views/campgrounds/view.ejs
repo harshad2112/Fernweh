@@ -1,8 +1,8 @@
 <%- include ("../partials/header") %> 
         
 <div class="contain test">
-        <div class="Images">
-            <h4> <%= campground.name %> </h4>
+        <div class="Image1">
+            <h1> <%= campground.name %> </h1>
             <img src="<%= campground.url %>">
             <p><%= campground.description %></p>
             <% campground.comment.forEach(function(comment){ %>

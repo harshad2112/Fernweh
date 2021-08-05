@@ -20,11 +20,12 @@ router.get("/campgrounds/new",isLoggedIn,function(req, res){
 router.post("/campgrounds",isLoggedIn,function(req,res){
     var name = req.body.name;
     var url = req.body.imgURL;
+    var description = req.body.desc;
     var author = {
         id: req.user.id,
         username: req.user.username
     };
-    var newcamp = {name: name, url: url, author: author}
+    var newcamp = {name: name, url: url, description: description, author: author}
     allcampgrounds.create(newcamp, function(err,campgrounds){
         if(err){
             console.log(err);
@@ -54,7 +55,8 @@ router.get("/campgrounds/:id/edit",checkCampgroundOwnership, function(req,res){
 router.put("/campgrounds/:id",checkCampgroundOwnership, function(req,res){
     allcampgrounds.findByIdAndUpdate(req.params.id,{
         name: req.body.name,
-        url: req.body.imgURL
+        url: req.body.imgURL,
+        description: req.body.description
     },function(err,camp){
         if(err){
             res.redirect("/campgrounds");

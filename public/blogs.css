@@ -1,0 +1,35 @@
+.Images{
+    display: flex;
+    border-radius: 8px;
+    background-color: #eee;
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+}
+.CName{
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Raleway';
+
+}
+.CDesc{
+    width: 350px;
+    height: 3.6rem;
+    overflow: hidden;
+}
+.CImg img{
+    width: 350px;
+    height: auto;
+}
+.contain{
+    display: flex;
+    margin: 0 15%;
+    gap: 60px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: auto;
+    margin-bottom: 100px;
+}
+.Image1{
+    /* width: 00px; */
+}

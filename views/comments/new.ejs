@@ -1,5 +1,5 @@
 <h1>This is our comment tab</h1>
-<form action="/campgrounds/<%= campground._id %>/comments" method="POST">
-    <input type="text" name="text" placeholder="comment">
-    <button>SUBMIT</button>    
+<form action="/campgrounds/<%= campground._id %>/comments" method="POST" class="Label">
+    <input type="text" name="text" placeholder="comment" class="postText" required>
+    <button class="submitButton">SUBMIT</button>    
 </form>
