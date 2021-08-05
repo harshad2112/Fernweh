@@ -1,17 +1,5 @@
 <%- include ("../partials/header") %> 
-    
-<div class="cH">
-    <h1>This is our <%= campground.name %> campground </h1>
-    <a class="new" href="/campgrounds/new">Add new Campground</a>
-    <a class="new" href="/campgrounds">Home</a>
-    <% if(!currentUser){ %>
-        <a class="new" href="/login">LOGIN</a>
-        <a class="new" href="/register">Register</a>
-        <% }else{ %>
-        <a class="new" href="#">Signed in as <%=currentUser.username %></a>
-        <a class="new" href="/logout">LOGOUT</a>
-        <% } %>
-    </div>     
+        
 <div class="contain test">
         <div class="Images">
             <h4> <%= campground.name %> </h4>
