@@ -1,0 +1,34 @@
+.HomePage{
+    display: flex;
+    margin: 2% 10%;
+    gap: 10%;
+    justify-content: space-between;
+}
+.homeImg{
+    height: 620px;
+}
+.HomeLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.HomeHeader{
+    font-size: 50px;
+}
+.NameIn{
+    color: #E88445;
+}
+.HomeButtons{
+    display: flex;
+    /* margin-left: 10%; */
+    gap: 5%;
+}
+.HomeButtons a button{
+    border: none;
+    background-color: #E88445;
+    font: 1.2em sans-serif;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+}

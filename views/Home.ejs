@@ -1,3 +1,18 @@
 <%- include ("partials/header") %>
-    <p>This is our Yelp camp Home page</p>
-<%- include ("partials/footer") %>
+<div class="HomePage">
+    <div class="HomeLeft">
+        <h2 class="HomeHeader">Take your Storytelling to the next level with <span class="NameIn">Fernweh.</span></h2>
+        <div class="HomeButtons">
+            <!-- <button>Our Blogs</button> -->
+            <% if(!currentUser){ %>
+            <a href="/register"><button>Start writing</button></a>
+            <% }else{ %>
+            <a href="/campgrounds/new"><button>Start writing</button></a>
+            <% } %>
+        </div>
+    </div>
+    <div>
+        <img class="homeImg" src="/home.png">
+    </div>
+</div>
+    <%- include ("partials/footer") %>

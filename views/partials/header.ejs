@@ -4,20 +4,24 @@
         <title>YELP CAMP</title>
         <link rel="stylesheet" type="text/css" href="/app.css">
         <link rel="stylesheet" type="text/css" href="/login.css">
+        <link rel="stylesheet" type="text/css" href="/home.css">
     </head>
     <body>
         <div class="cH">
             <div class="leftPane">
                 <a href="/"><img src="/final.png" class="logo"></a>
-                <a class="Left" href="/">Home</a>
-                <a class="Left" href="/campgrounds">All campgrounds</a>
+                <a href="/"><h1 class="SiteName">Fernweh.</h1></a>
+                <!-- <a class="Left" href="/campgrounds">All campgrounds</a> -->
             </div>
             <div class="RightPane">
                 <% if(!currentUser){ %>
-                    <a class="Left" href="/login">LOGIN</a>
+                    <a class="LeftLogin" href="/campgrounds/new">Write a blog</a>
+                    <a class="LeftLogin" href="/campgrounds">Explore</a>
+                    <a class="LeftLogin" href="/login">Login</a>
                     <a class="Left" href="/register">Register</a>
                     <% }else{ %>
-                    <a class="Left" href="#">Signed in as <%=currentUser.username %></a>
+                    <a class="LeftLogin" href="/campgrounds/new">write a Blog</a>
+                    <a class="LeftLogin" href="#">Welcome, <%=currentUser.username %></a>
                     <a class="Left" href="/logout">LOGOUT</a>
                 <% } %>
             </div>
